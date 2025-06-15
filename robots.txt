@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kingnate-dlegend.github.io/code-by-nate/sitemap.xml

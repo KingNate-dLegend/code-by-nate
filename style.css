@@ -1,0 +1,225 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+button#toggle-mode {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Sections */
+main section {
+  margin-bottom: 40px;
+}
+
+.card,
+.project-card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th:nth-child(1),
+.pricing-table td:nth-child(1) {
+  text-align: left;
+}
+
+.pricing-table th:nth-child(2),
+.pricing-table td:nth-child(2) {
+  text-align: right;
+}
+
+
+.pricing-table th,
+.pricing-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 10px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark .card,
+body.dark .project-card {
+  background: #1f1f1f;
+}
+
+body.dark input,
+body.dark textarea {
+  background: #1f1f1f;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark nav,
+body.dark footer {
+  color: #aaa;
+}
+
+
+
+/*  Mobile Responsive Styling */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  header h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  header p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .pricing-table {
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    text-align: left;
+    padding: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
